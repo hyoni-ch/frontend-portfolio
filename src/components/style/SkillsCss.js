@@ -15,6 +15,13 @@ const SkillsName = styled.div`
   }
 `;
 
+const SkillsLiBox = styled.div`
+  display: flex;
+  @media screen and (max-width: 698px) {
+    width: 65%;
+  }
+`;
+
 const SkillsLi = styled.div`
   background-color: #eee;
   padding: 8px;
@@ -24,6 +31,9 @@ const SkillsLi = styled.div`
   margin-right: 7px;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 698px) {
+    float: right;
+  }
 `;
 
-export { SkillsBox, SkillsLi, SkillsName };
+export { SkillsBox, SkillsLi, SkillsName, SkillsLiBox };

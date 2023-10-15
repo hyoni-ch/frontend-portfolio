@@ -1,5 +1,10 @@
 import React from "react";
-import { SkillsBox, SkillsLi, SkillsName } from "./style/SkillsCss";
+import {
+  SkillsBox,
+  SkillsLi,
+  SkillsName,
+  SkillsLiBox,
+} from "./style/SkillsCss";
 import { NameBox, CommonBox } from "./style/CommonCss";
 
 export default function Skills() {
@@ -8,29 +13,39 @@ export default function Skills() {
       <NameBox>SKILLS</NameBox>
       <SkillsBox>
         <SkillsName>Language</SkillsName>
-        <SkillsLi>JavaScript</SkillsLi>
+        <SkillsLiBox>
+          <SkillsLi>JavaScript</SkillsLi>
+        </SkillsLiBox>
       </SkillsBox>
       <SkillsBox>
         <SkillsName>Framework / Library</SkillsName>
-        <SkillsLi>React</SkillsLi>
-        <SkillsLi>Redux</SkillsLi>
-        <SkillsLi>NodeJS</SkillsLi>
-        <SkillsLi>Express</SkillsLi>
+        <SkillsLiBox>
+          <SkillsLi>React</SkillsLi>
+          <SkillsLi>Redux</SkillsLi>
+          <SkillsLi>NodeJS</SkillsLi>
+          <SkillsLi>Express</SkillsLi>
+        </SkillsLiBox>
       </SkillsBox>
       <SkillsBox>
         <SkillsName>MarkUp</SkillsName>
-        <SkillsLi>HTML</SkillsLi>
-        <SkillsLi>CSS</SkillsLi>
-        <SkillsLi>Emotion</SkillsLi>
+        <SkillsLiBox>
+          <SkillsLi>HTML</SkillsLi>
+          <SkillsLi>CSS</SkillsLi>
+          <SkillsLi>Emotion</SkillsLi>
+        </SkillsLiBox>
       </SkillsBox>
       <SkillsBox>
         <SkillsName>Version Control</SkillsName>
-        <SkillsLi>Git</SkillsLi>
-        <SkillsLi>Github</SkillsLi>
+        <SkillsLiBox>
+          <SkillsLi>Git</SkillsLi>
+          <SkillsLi>Github</SkillsLi>
+        </SkillsLiBox>
       </SkillsBox>
       <SkillsBox>
         <SkillsName>Deployment</SkillsName>
-        <SkillsLi>netlify</SkillsLi>
+        <SkillsLiBox>
+          <SkillsLi>netlify</SkillsLi>
+        </SkillsLiBox>
       </SkillsBox>
     </CommonBox>
   );

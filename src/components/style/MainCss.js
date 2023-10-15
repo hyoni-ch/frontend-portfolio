@@ -5,7 +5,7 @@ const MainBox = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 698px) {
-    width: 90%;
+    width: 77%;
   }
 `;
 
