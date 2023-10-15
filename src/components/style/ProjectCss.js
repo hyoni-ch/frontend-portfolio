@@ -19,10 +19,6 @@ const ProjectBox = styled.div`
   height: 340px;
   margin-bottom: 15px;
 
-  &:hover {
-    background-color: #ddd;
-    cursor: pointer;
-  }
   @media screen and (max-width: 698px) {
     width: 100%;
     height: 500px;
@@ -36,6 +32,12 @@ const ProjectImg = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  &:hover {
+    cursor: url(.../assets/images/hoverCursorImg.png) 10 10,
+      url(.../assets/images/hoverCursorImg2.png) 10 10, pointer;
+    background-color: #ddd;
+  }
 `;
 
 const ProjectAboutBox = styled.div`
@@ -48,6 +50,7 @@ const ProjectAboutBox = styled.div`
   div {
     margin-bottom: 3px;
     a {
+      display: inline-block;
       font-size: 10px;
       text-decoration: underline;
       color: #555555;

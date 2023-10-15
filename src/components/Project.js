@@ -20,7 +20,7 @@ export default function Project() {
       <NameBox>
         PROJECT{" "}
         <span style={{ fontSize: "12px", fontWeight: 300, color: "#bbb" }}>
-          클릭하면 자세히 볼 수 있습니다.
+          이미지를 클릭하면 자세히 볼 수 있습니다.
         </span>
       </NameBox>
 
@@ -73,45 +73,47 @@ export default function Project() {
         </Link>
 
         {/* 두번째 */}
-        <Link to="/project/dust">
-          <ProjectBox>
+
+        <ProjectBox>
+          <Link to="/project/dust">
             <ProjectImg>
               <img src={dustImg} alt="미세먼지 알리미 이미지" />
             </ProjectImg>
-            <ProjectAboutBox>
-              <ProjectName> 미세먼지 알리미</ProjectName>
+          </Link>
 
-              <ProjectDate>2023/09/18 ~ 2022/09/24</ProjectDate>
-              <ProjectSkills>
-                <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
-                  React
-                </span>
-                <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
-                  Redux
-                </span>
-                <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                  emotion
-                </span>
-              </ProjectSkills>
-              <div>
-                배포 링크{" "}
-                <a href="https://dust-app-chh.netlify.app" target="_blank">
-                  https://dust-app-chh.netlify.app
-                </a>
-              </div>
-              <div>
-                리포지토리{" "}
-                <a
-                  href="https://github.com/hyoni-ch/react-dust-app"
-                  target="_blank"
-                >
-                  https://github.com/hyoni-ch/react-dust-app
-                </a>
-              </div>
-              <ProjectSolo>Solo Project</ProjectSolo>
-            </ProjectAboutBox>
-          </ProjectBox>
-        </Link>
+          <ProjectAboutBox>
+            <ProjectName> 미세먼지 알리미</ProjectName>
+
+            <ProjectDate>2023/09/18 ~ 2022/09/24</ProjectDate>
+            <ProjectSkills>
+              <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
+                React
+              </span>
+              <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
+                Redux
+              </span>
+              <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
+                emotion
+              </span>
+            </ProjectSkills>
+            <div>
+              배포 링크{" "}
+              <a href="https://dust-app-chh.netlify.app" target="_blank">
+                https://dust-app-chh.netlify.app
+              </a>
+            </div>
+            <div>
+              리포지토리{" "}
+              <a
+                href="https://github.com/hyoni-ch/react-dust-app"
+                target="_blank"
+              >
+                https://github.com/hyoni-ch/react-dust-app
+              </a>
+            </div>
+            <ProjectSolo>Solo Project</ProjectSolo>
+          </ProjectAboutBox>
+        </ProjectBox>
 
         {/* 세번째 */}
         {/* <ProjectBox>
