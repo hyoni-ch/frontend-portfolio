@@ -26,51 +26,52 @@ export default function Project() {
 
       <ProjectContainer>
         {/* 첫번째 */}
-        <Link to="/project/together">
-          <ProjectBox>
+
+        <ProjectBox>
+          <Link to="/project/together">
             <ProjectImg>
               <img src={togetherImg} alt="함께해요 이미지" />
             </ProjectImg>
-            <ProjectAboutBox>
-              <ProjectName>함께해요 - 강아지 커뮤니티</ProjectName>
+          </Link>
+          <ProjectAboutBox>
+            <ProjectName>함께해요 - 강아지 커뮤니티</ProjectName>
 
-              <ProjectDate>2022/08/30 ~ 2022/10/31</ProjectDate>
-              <ProjectSkills>
-                <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
-                  React
-                </span>
-                <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
-                  Redux
-                </span>
-                <span style={{ color: "#555555", backgroundColor: "#eee" }}>
-                  Express
-                </span>
-                <span style={{ color: "#827717", backgroundColor: "#f0f4c3" }}>
-                  NodeJS
-                </span>
-                <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                  Mongoose
-                </span>
-              </ProjectSkills>
-              <div>
-                배포 링크{" "}
-                <a href="https://dog-commuinty.fly.dev/" target="_blank">
-                  https://dog-commuinty.fly.dev/
-                </a>
-              </div>
-              <div>
-                리포지토리{" "}
-                <a
-                  href="https://github.com/hyoni-ch/kku-Community"
-                  target="_blank"
-                >
-                  https://github.com/hyoni-ch/kku-Community
-                </a>
-              </div>
-              <ProjectSolo>Solo Project</ProjectSolo>
-            </ProjectAboutBox>
-          </ProjectBox>
-        </Link>
+            <ProjectDate>2022/08/30 ~ 2022/10/31</ProjectDate>
+            <ProjectSkills>
+              <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
+                React
+              </span>
+              <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
+                Redux
+              </span>
+              <span style={{ color: "#555555", backgroundColor: "#eee" }}>
+                Express
+              </span>
+              <span style={{ color: "#827717", backgroundColor: "#f0f4c3" }}>
+                NodeJS
+              </span>
+              <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
+                Mongoose
+              </span>
+            </ProjectSkills>
+            <div className="linkName">
+              배포 링크{" "}
+              <a href="https://dog-commuinty.fly.dev/" target="_blank">
+                https://dog-commuinty.fly.dev/
+              </a>
+            </div>
+            <div className="linkName">
+              리포지토리{" "}
+              <a
+                href="https://github.com/hyoni-ch/kku-Community"
+                target="_blank"
+              >
+                https://github.com/hyoni-ch/kku-Community
+              </a>
+            </div>
+            <ProjectSolo>Solo Project</ProjectSolo>
+          </ProjectAboutBox>
+        </ProjectBox>
 
         {/* 두번째 */}
 
@@ -93,16 +94,16 @@ export default function Project() {
                 Redux
               </span>
               <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                emotion
+                styled-commponent
               </span>
             </ProjectSkills>
-            <div>
+            <div className="linkName">
               배포 링크{" "}
               <a href="https://dust-app-chh.netlify.app" target="_blank">
                 https://dust-app-chh.netlify.app
               </a>
             </div>
-            <div>
+            <div className="linkName">
               리포지토리{" "}
               <a
                 href="https://github.com/hyoni-ch/react-dust-app"
@@ -114,93 +115,6 @@ export default function Project() {
             <ProjectSolo>Solo Project</ProjectSolo>
           </ProjectAboutBox>
         </ProjectBox>
-
-        {/* 세번째 */}
-        {/* <ProjectBox>
-          <ProjectImg>
-            <img src={togetherImg} alt="To Do List 이미지" />
-          </ProjectImg>
-          <ProjectAboutBox>
-            <ProjectName>To Do List</ProjectName>
-
-            <ProjectDate>2022/08/30 ~ 2022/10/31</ProjectDate>
-            <ProjectSkills>
-              <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
-                React
-              </span>
-              <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
-                Redux
-              </span>
-              <span style={{ color: "#555555", backgroundColor: "#eee" }}>
-                Express
-              </span>
-              <span style={{ color: "#827717", backgroundColor: "#f0f4c3" }}>
-                NodeJS
-              </span>
-              <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                Mongoose
-              </span>
-            </ProjectSkills>
-            <div>
-              배포 링크{" "}
-              <a href="https://dog-commuinty.fly.dev/" target="_blank">
-                https://dog-commuinty.fly.dev/
-              </a>
-            </div>
-            <div>
-              리포지토리{" "}
-              <a
-                href="https://github.com/hyoni-ch/kku-Community"
-                target="_blank"
-              >
-                https://github.com/hyoni-ch/kku-Community
-              </a>
-            </div>
-            <ProjectSolo>Solo Project</ProjectSolo>
-          </ProjectAboutBox>
-        </ProjectBox> */}
-
-        {/* 네번째 */}
-        {/* <ProjectBox>
-          <ProjectImg>
-            <img src={togetherImg} alt="내 친구 챗봇 이미지" />
-          </ProjectImg>
-          <ProjectAboutBox>
-            <ProjectName>내 친구 챗봇</ProjectName>
-
-            <ProjectDate>2022/08/30 ~ 2022/10/31</ProjectDate>
-            <ProjectSkills>
-              <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
-                React
-              </span>
-              <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
-                Redux
-              </span>
-              <span style={{ color: "#555555", backgroundColor: "#eee" }}>
-                Express
-              </span>
-              <span style={{ color: "#827717", backgroundColor: "#f0f4c3" }}>
-                NodeJS
-              </span>
-              <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                Mongoose
-              </span>
-            </ProjectSkills>
-            <div>
-              배포 링크{" "}
-              <a href="https://github.com/hyoni-ch/ChatBotAI" target="_blank">
-                https://dog-commuinty.fly.dev/
-              </a>
-            </div>
-            <div>
-              리포지토리{" "}
-              <a href="https://github.com/hyoni-ch/ChatBotAI" target="_blank">
-                https://github.com/hyoni-ch/ChatBotAI
-              </a>
-            </div>
-            <ProjectSolo>Solo Project</ProjectSolo>
-          </ProjectAboutBox>
-        </ProjectBox> */}
       </ProjectContainer>
     </CommonBox>
   );

@@ -13,6 +13,10 @@ const SkillsName = styled.div`
     width: 32%;
     margin-left: 10px;
   }
+
+  @media screen and (max-width: 470px) {
+    font-size: 12px;
+  }
 `;
 
 const SkillsLiBox = styled.div`
@@ -31,8 +35,8 @@ const SkillsLi = styled.div`
   margin-right: 7px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 698px) {
-    float: right;
+  @media screen and (max-width: 470px) {
+    font-size: 10px;
   }
 `;
 

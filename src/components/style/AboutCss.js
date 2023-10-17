@@ -7,6 +7,10 @@ const AboutBox = styled.div`
   @media screen and (max-width: 698px) {
     flex-direction: column;
   }
+
+  @media screen and (max-width: 420px) {
+    font-size: 14px;
+  }
 `;
 
 const AboutIntroduce = styled.div`
@@ -37,9 +41,9 @@ const AboutMe = styled.div`
 
 const AboutA = styled.a`
   text-decoration: underline;
-  font-style: italic;
   &:hover {
-    color: #666666;
+    background-color: #eee;
+    border-radius: 7px;
   }
 `;
 export { AboutBox, AboutA, AboutMe, AboutIntroduce };

@@ -2,12 +2,13 @@
   padding-top: 80px;
   height: 1000px;
 
+  
   @media screen and (max-width: 600px) {
     padding-top: 120px;
-    width: 100%;
   }
-  
-  @media screen and (max-width: 698px) {
+
+  @media screen and (max-width: 600px) {
+    padding-top: 120px;
     flex-direction: column;
   }
 }

@@ -36,7 +36,6 @@ const ProjectImg = styled.div`
   &:hover {
     cursor: url(.../assets/images/hoverCursorImg.png) 10 10,
       url(.../assets/images/hoverCursorImg2.png) 10 10, pointer;
-    background-color: #ddd;
   }
 `;
 
@@ -47,7 +46,7 @@ const ProjectAboutBox = styled.div`
   width: 100%;
   line-height: 1.8;
 
-  div {
+  .linkName {
     margin-bottom: 3px;
     a {
       display: inline-block;
@@ -65,6 +64,18 @@ const ProjectAboutBox = styled.div`
     font-size: 17px;
     line-height: 2.2;
     padding: 10px;
+
+    .linkName {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .linkName {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -75,10 +86,6 @@ const ProjectSolo = styled.div`
   padding: 5px;
   font-size: 10px;
   display: inline-block;
-
-  @media screen and (max-width: 698px) {
-    font-size: 12px;
-  }
 `;
 
 const ProjectDate = styled.div`
@@ -110,6 +117,10 @@ const ProjectSkills = styled.div`
 
   @media screen and (max-width: 698px) {
     font-size: 12px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
   }
 `;
 
