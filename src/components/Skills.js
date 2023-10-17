@@ -31,7 +31,7 @@ export default function Skills() {
         <SkillsLiBox>
           <SkillsLi>HTML</SkillsLi>
           <SkillsLi>CSS</SkillsLi>
-          <SkillsLi>Emotion</SkillsLi>
+          <SkillsLi>styled-component</SkillsLi>
         </SkillsLiBox>
       </SkillsBox>
       <SkillsBox>
