@@ -16,7 +16,7 @@ import dustImg from "../assets/images/dustImg.png";
 
 export default function Project() {
   return (
-    <CommonBox>
+    <CommonBox id="projectBox">
       <NameBox>
         PROJECT{" "}
         <span style={{ fontSize: "12px", fontWeight: 300, color: "#bbb" }}>

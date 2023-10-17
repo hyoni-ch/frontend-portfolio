@@ -7,7 +7,7 @@ import { IoIosSchool } from "react-icons/io";
 
 export default function About() {
   return (
-    <CommonBox>
+    <CommonBox id="aboutBox">
       <NameBox>ABOUT</NameBox>
       <AboutBox>
         <AboutIntroduce>

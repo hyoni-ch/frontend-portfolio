@@ -9,7 +9,7 @@ import { NameBox, CommonBox } from "./style/CommonCss";
 
 export default function Skills() {
   return (
-    <CommonBox>
+    <CommonBox id="skillsBox">
       <NameBox>SKILLS</NameBox>
       <SkillsBox>
         <SkillsName>Language</SkillsName>

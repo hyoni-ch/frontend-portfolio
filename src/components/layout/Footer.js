@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterBox } from "./style/FooterCss";
+import { FooterBox } from "../style/FooterCss";
 import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {

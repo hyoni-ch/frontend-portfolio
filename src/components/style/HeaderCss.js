@@ -5,10 +5,8 @@ const HeaderBox = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 40px 0 90px;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 
