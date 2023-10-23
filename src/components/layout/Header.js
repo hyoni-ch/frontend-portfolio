@@ -10,13 +10,13 @@ export default function Header() {
         <Title>CHH's Portfolio</Title>
       </Link>
       <NavUl>
-        <LinkRoll to="aboutBox" smooth={true}>
+        <LinkRoll to="aboutBox" spy={true} smooth={true}>
           <NavLi>ABOUT</NavLi>
         </LinkRoll>
-        <LinkRoll to="skillsBox" smooth={true}>
+        <LinkRoll to="skillsBox" spy={true} smooth={true}>
           <NavLi>SKILLS</NavLi>
         </LinkRoll>
-        <LinkRoll to="projectBox" smooth={true}>
+        <LinkRoll to="projectBox" spy={true} smooth={true}>
           <NavLi>PROJECT</NavLi>
         </LinkRoll>
       </NavUl>
