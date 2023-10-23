@@ -5,14 +5,14 @@ import {
   SkillsName,
   SkillsLiBox,
 } from "./style/SkillsCss";
-import { CommonBox, Spacer } from "./style/CommonCss";
+import { CommonBox, NameBox, Spacer } from "./style/CommonCss";
 
 export default function Skills() {
   return (
     <>
       <Spacer id="skillsBox" />
       <CommonBox>
-        <h2 className="nameBox">SKILLS</h2>
+        <NameBox>SKILLS</NameBox>
         <SkillsBox>
           <SkillsName>Language</SkillsName>
           <SkillsLiBox>

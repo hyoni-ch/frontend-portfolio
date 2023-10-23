@@ -1,6 +1,6 @@
 import React from "react";
 import { AboutBox, AboutA, AboutMe, AboutIntroduce } from "./style/AboutCss";
-import { CommonBox, Spacer } from "./style/CommonCss";
+import { CommonBox, NameBox, Spacer } from "./style/CommonCss";
 import { BsTelephoneFill, BsGithub } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
 import { IoIosSchool } from "react-icons/io";
@@ -10,7 +10,7 @@ export default function About() {
     <>
       <Spacer id="aboutBox" />
       <CommonBox>
-        <h2 className="nameBox">ABOUT</h2>
+        <NameBox>ABOUT</NameBox>
         <AboutBox>
           <AboutIntroduce>
             프론트엔드 개발자 <span style={{ fontWeight: 700 }}>조하현</span>

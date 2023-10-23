@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CommonBox, Spacer } from "./style/CommonCss";
+import { CommonBox, NameBox, Spacer } from "./style/CommonCss";
 import {
   ProjectBox,
   ProjectContainer,
@@ -19,12 +19,9 @@ export default function Project() {
     <>
       <Spacer id="projectBox" />
       <CommonBox>
-        <h2 className="nameBox">
-          PROJECT{" "}
-          <span style={{ fontSize: "12px", fontWeight: 300, color: "#bbb" }}>
-            이미지를 클릭하면 자세히 볼 수 있습니다.
-          </span>
-        </h2>
+        <NameBox>
+          PROJECT <div>이미지를 클릭하면 자세히 볼 수 있습니다.</div>
+        </NameBox>
 
         <ProjectContainer>
           {/* 첫번째 */}

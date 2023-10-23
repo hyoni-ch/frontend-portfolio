@@ -7,7 +7,7 @@ const FooterBox = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10px;
+  margin: 80px 0 30px 0;
 `;
 
 export { FooterBox };
