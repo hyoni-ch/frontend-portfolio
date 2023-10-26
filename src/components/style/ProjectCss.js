@@ -124,18 +124,68 @@ const ProjectSkills = styled.div`
   }
 `;
 
-const TogetherBox = styled.div`
+const AboutProject = styled.div`
+  @font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  font-family: "Pretendard-Regular";
+
+  .slide {
+    img {
+      height: 370px;
+      margin: auto;
+    }
+  }
+
+  .more {
+    margin-top: 80px;
+
+    div {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #444444;
+      font-size: 1.3rem;
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      padding: 0;
+      li {
+        color: #777777;
+      }
+    }
+    .stack {
+      ul {
+        display: flex;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
   .backBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
     border: none;
-    background-color: #fff;
+    background-color: black;
+    color: #fff;
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    float: right;
+    line-height: 40px;
+    text-align: center;
+
     &:hover {
-      background-color: #eee;
+      background-color: #333333;
     }
   }
 `;
@@ -149,5 +199,5 @@ export {
   ProjectDate,
   ProjectName,
   ProjectSkills,
-  TogetherBox,
+  AboutProject,
 };

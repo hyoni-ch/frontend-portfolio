@@ -21,7 +21,7 @@ export default function Project() {
       <CommonBox>
         <NameBox>
           PROJECT
-          {/* <div>이미지를 클릭하면 자세히 볼 수 있습니다.</div> */}
+          <div>이미지를 클릭하면 자세히 볼 수 있습니다.</div>
         </NameBox>
 
         <ProjectContainer>
@@ -94,7 +94,7 @@ export default function Project() {
                   Redux
                 </span>
                 <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
-                  styled-commponent
+                  styled-component
                 </span>
               </ProjectSkills>
               <div className="linkName">
