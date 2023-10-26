@@ -124,6 +124,22 @@ const ProjectSkills = styled.div`
   }
 `;
 
+const TogetherBox = styled.div`
+  .backBtn {
+    border: none;
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    float: right;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+`;
+
 export {
   ProjectContainer,
   ProjectBox,
@@ -133,4 +149,5 @@ export {
   ProjectDate,
   ProjectName,
   ProjectSkills,
+  TogetherBox,
 };

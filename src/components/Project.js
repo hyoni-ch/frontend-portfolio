@@ -20,7 +20,8 @@ export default function Project() {
       <Spacer id="projectBox" />
       <CommonBox>
         <NameBox>
-          PROJECT <div>이미지를 클릭하면 자세히 볼 수 있습니다.</div>
+          PROJECT
+          {/* <div>이미지를 클릭하면 자세히 볼 수 있습니다.</div> */}
         </NameBox>
 
         <ProjectContainer>

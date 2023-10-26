@@ -18,7 +18,7 @@ const NameBox = styled.h2`
     color: #ccc;
     font-weight: 300;
 
-    //프로젝트 컴포넌트에 "클릭"
+    //프로젝트 컴포넌트에 "이미지를 클릭하면 자세히 볼 수 있습니다."
     animation: motion 0.6s linear 0s infinite alternate;
     margin-top: 0;
     @keyframes motion {
@@ -36,4 +36,8 @@ const Spacer = styled.div`
   height: 100px;
 `;
 
-export { CommonBox, NameBox, Spacer };
+const IntroSpacer = styled.div`
+  height: 80px;
+`;
+
+export { CommonBox, NameBox, Spacer, IntroSpacer };

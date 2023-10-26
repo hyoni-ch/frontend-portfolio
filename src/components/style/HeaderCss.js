@@ -11,6 +11,7 @@ const HeaderBox = styled.header`
   right: 0;
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  z-index: 10;
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
