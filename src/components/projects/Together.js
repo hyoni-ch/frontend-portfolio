@@ -53,7 +53,7 @@ export default function Together() {
             );
           })}
         </Slider>
-        <div className="togetherAbout">
+        <div className="more">
           <div>
             <h2>함께해요</h2>
             <ul>
