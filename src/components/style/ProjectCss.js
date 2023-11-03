@@ -135,6 +135,7 @@ const AboutProject = styled.div`
 
   .slide {
     img {
+      width: 100%;
       height: 370px;
       margin: auto;
     }
@@ -189,6 +190,12 @@ const AboutProject = styled.div`
 
   @media screen and (max-width: 600px) {
     margin-top: 30px;
+
+    .slide {
+      img {
+        height: 270px;
+      }
+    }
   }
 `;
 
