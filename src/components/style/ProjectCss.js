@@ -186,6 +186,10 @@ const AboutProject = styled.div`
       background-color: #333333;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 30px;
+  }
 `;
 
 export {
