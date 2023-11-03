@@ -43,7 +43,6 @@ const ProjectAboutBox = styled.div`
   font-size: 14px;
   margin-left: 10px;
   margin-top: 5px;
-  width: 100%;
   line-height: 1.8;
 
   .linkName {
@@ -63,7 +62,6 @@ const ProjectAboutBox = styled.div`
   @media screen and (max-width: 698px) {
     font-size: 17px;
     line-height: 2.2;
-    padding: 10px;
 
     .linkName {
       a {

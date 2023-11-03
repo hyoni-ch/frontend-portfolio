@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const CommonBox = styled.div`
   @media screen and (max-width: 698px) {
-    text-align: center;
   }
 `;
 
@@ -28,6 +27,12 @@ const NameBox = styled.h2`
       100% {
         margin-top: 10px;
       }
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    div {
+      font-size: 10px;
     }
   }
 `;
