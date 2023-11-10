@@ -11,8 +11,7 @@ import {
   ProjectName,
   ProjectSkills,
 } from "./style/ProjectCss";
-import togetherImg from "../assets/images/togetherImg.png";
-import dustImg from "../assets/images/dustImg.png";
+import { togetherImg, dustImg, todolistImg1 } from "../assets/images";
 
 export default function Project() {
   return (
@@ -34,7 +33,7 @@ export default function Project() {
               </ProjectImg>
             </Link>
             <ProjectAboutBox>
-              <ProjectName>함께해요 - 강아지 커뮤니티</ProjectName>
+              <ProjectName>함께해요 - 반려견 커뮤니티</ProjectName>
 
               <ProjectDate>2022/08/30 ~ 2022/10/31</ProjectDate>
               <ProjectSkills>
@@ -55,13 +54,13 @@ export default function Project() {
                 </span>
               </ProjectSkills>
               <div className="linkName">
-                배포 링크{" "}
+                배포링크{" "}
                 <a href="https://dog-commuinty.fly.dev/" target="_blank">
                   https://dog-commuinty.fly.dev/
                 </a>
               </div>
               <div className="linkName">
-                리포지토리{" "}
+                깃허브{" "}
                 <a
                   href="https://github.com/hyoni-ch/kku-Community"
                   target="_blank"
@@ -98,18 +97,61 @@ export default function Project() {
                 </span>
               </ProjectSkills>
               <div className="linkName">
-                배포 링크{" "}
+                배포링크{" "}
                 <a href="https://dust-app-chh.netlify.app" target="_blank">
                   https://dust-app-chh.netlify.app
                 </a>
               </div>
               <div className="linkName">
-                리포지토리{" "}
+                깃허브{" "}
                 <a
                   href="https://github.com/hyoni-ch/react-dust-app"
                   target="_blank"
                 >
                   https://github.com/hyoni-ch/react-dust-app
+                </a>
+              </div>
+              <ProjectSolo>Solo Project</ProjectSolo>
+            </ProjectAboutBox>
+          </ProjectBox>
+
+          {/* 세번째 */}
+
+          <ProjectBox>
+            <Link to="/project/todolist">
+              <ProjectImg>
+                <img src={todolistImg1} alt="투두리스트 이미지" />
+              </ProjectImg>
+            </Link>
+
+            <ProjectAboutBox>
+              <ProjectName>투두리스트</ProjectName>
+
+              <ProjectDate>2023/11/03 ~ 2022/11/07</ProjectDate>
+              <ProjectSkills>
+                <span style={{ color: "#1d2951", backgroundColor: "#e1f5fe" }}>
+                  React
+                </span>
+                <span style={{ color: "#e65100", backgroundColor: "#fff3e0" }}>
+                  Redux
+                </span>
+                <span style={{ color: "#1b5e20", backgroundColor: "#e8f5e9" }}>
+                  typescript
+                </span>
+              </ProjectSkills>
+              <div className="linkName">
+                배포링크{" "}
+                <a href="https://todolist-chh.netlify.app/" target="_blank">
+                  https://todolist-chh.netlify.app/
+                </a>
+              </div>
+              <div className="linkName">
+                깃허브{" "}
+                <a
+                  href="https://github.com/hyoni-ch/redux-ts-todolist-app"
+                  target="_blank"
+                >
+                  https://github.com/hyoni-ch/redux-ts-todolist-app
                 </a>
               </div>
               <ProjectSolo>Solo Project</ProjectSolo>

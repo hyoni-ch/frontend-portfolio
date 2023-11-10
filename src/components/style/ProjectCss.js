@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { hoverCursorImg, hoverCursorImg2 } from "../../assets/images/index";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -31,11 +32,10 @@ const ProjectImg = styled.div`
   img {
     width: 100%;
     height: 100%;
-  }
-
-  &:hover {
-    cursor: url(.../assets/images/hoverCursorImg.png) 10 10,
-      url(.../assets/images/hoverCursorImg2.png) 10 10, pointer;
+    &:hover {
+      cursor: url(${hoverCursorImg}) 10 10, url(${hoverCursorImg2}) 10 10,
+        pointer;
+    }
   }
 `;
 

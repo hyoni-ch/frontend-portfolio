@@ -4,7 +4,7 @@ import { MainBox } from "../style/MainCss";
 import { AboutProject } from "../style/ProjectCss";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { dustImg1, dustImg2, dustImg3 } from "../../assets/images";
+import { dustImg1, dustImg2, dustImg3, dustImg4 } from "../../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,7 +20,7 @@ export default function Together() {
     autoplaySpeed: 3000,
   };
 
-  const img = [dustImg1, dustImg2, dustImg3];
+  const img = [dustImg1, dustImg2, dustImg3, dustImg4];
 
   return (
     <MainBox>
@@ -39,6 +39,7 @@ export default function Together() {
           <div>
             <h2>미세먼지 알리미</h2>
             <ul>
+              <li>2023/09/18 ~ 2023/09/24</li>
               <li>패스트캠퍼스 국비지원 파이널 프로젝트</li>
               <li>전국 미세먼지 수치를 볼 수 있는 웹 사이트</li>
             </ul>
@@ -61,6 +62,7 @@ export default function Together() {
               <li>Open API를 이용하여 전국 미세먼지 정보 가져오기</li>
               <li>각 카드마다 즐겨찾기 기능</li>
               <li>즐겨찾기 목록에서 확인/삭제 기능</li>
+              <li>로딩페이지 구현</li>
             </ul>
           </div>
 

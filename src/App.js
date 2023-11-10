@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import Main from "./components/layout/Main";
 import Together from "./components/projects/Together";
 import Dust from "./components/projects/Dust";
+import TodoList from "./components/projects/TodoList";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/project/together" element={<Together />} />
           <Route path="/project/dust" element={<Dust />} />
+          <Route path="/project/todolist" element={<TodoList />} />
         </Routes>
         <Footer />
       </BrowserRouter>
