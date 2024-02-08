@@ -39,7 +39,7 @@ export default function TodoList() {
           <div>
             <h2>투두리스트</h2>
             <ul>
-              <li>2023/11/03 ~ 2022/11/07</li>
+              <li>2023/11/03 ~ 2023/11/07</li>
               <li>토이 프로젝트</li>
               <li>해야할 일을 메모하고 체크하는 웹 사이트</li>
             </ul>

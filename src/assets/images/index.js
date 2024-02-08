@@ -20,6 +20,19 @@ import todolistImg from "./todolistImg.png";
 import todolistImg1 from "./todolistImg-1.png";
 import todolistImg2 from "./todolistImg-2.png";
 
+import mobilewedding from "./mobiewedding.png";
+import mobilewedding1 from "./mobiewedding-1.png";
+import mobilewedding2 from "./mobiewedding-2.png";
+import mobilewedding3 from "./mobiewedding-3.png";
+import mobilewedding4 from "./mobiewedding-4.png";
+import mobilewedding5 from "./mobiewedding-5.png";
+import mobilewedding6 from "./mobiewedding-6.png";
+import mobilewedding7 from "./mobiewedding-7.png";
+import mobilewedding8 from "./mobiewedding-8.png";
+import mobilewedding9 from "./mobiewedding-9.png";
+import mobilewedding10 from "./mobiewedding-10.png";
+import mobilewedding11 from "./mobiewedding-11.png";
+
 export {
   hoverCursorImg,
   hoverCursorImg2,
@@ -39,4 +52,16 @@ export {
   todolistImg,
   todolistImg1,
   todolistImg2,
+  mobilewedding,
+  mobilewedding1,
+  mobilewedding2,
+  mobilewedding3,
+  mobilewedding4,
+  mobilewedding5,
+  mobilewedding6,
+  mobilewedding7,
+  mobilewedding8,
+  mobilewedding9,
+  mobilewedding10,
+  mobilewedding11,
 };
