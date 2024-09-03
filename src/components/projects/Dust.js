@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { Spacer } from "../style/CommonCss";
-import { MainBox } from "../style/MainCss";
-import { AboutProject } from "../style/ProjectCss";
+import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { dustImg1, dustImg2, dustImg3, dustImg4 } from "../../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from "../style/AboutProjects.module.css";
 
 export default function Together() {
   const settings = {
@@ -23,19 +21,19 @@ export default function Together() {
   const img = [dustImg1, dustImg2, dustImg3, dustImg4];
 
   return (
-    <MainBox>
-      <Spacer />
-      <AboutProject>
+    <div className={styles.box}>
+      <div className="h-28"></div>
+      <div>
         <Slider {...settings}>
           {img.map((imgs, idx) => {
             return (
-              <div className="slide">
+              <div>
                 <img src={img[idx]} alt="미세먼지 알리미 슬라이드 이미지" />
               </div>
             );
           })}
         </Slider>
-        <div className="more">
+        <div className={styles.more}>
           <div>
             <h2>미세먼지 알리미</h2>
             <ul>
@@ -45,7 +43,7 @@ export default function Together() {
             </ul>
           </div>
 
-          <div className="motivation">
+          <div>
             <h2>프로젝트 개발 동기</h2>
             <ul>
               <li>1. 미세먼지 수치를 보기 쉽게 하기 위해</li>
@@ -56,7 +54,7 @@ export default function Together() {
             </ul>
           </div>
 
-          <div className="func">
+          <div>
             <h2>프로젝트 기능</h2>
             <ul>
               <li>Open API를 이용하여 전국 미세먼지 정보 가져오기</li>
@@ -66,9 +64,9 @@ export default function Together() {
             </ul>
           </div>
 
-          <div className="stack">
+          <div>
             <h2>기술 스택</h2>
-            <ul>
+            <ul className="flex gap-10">
               <li>React</li>
               <li>Redux</li>
               <li>styled-component</li>
@@ -77,11 +75,11 @@ export default function Together() {
         </div>
 
         <Link to="/">
-          <div className="backBtn">
+          <div className={styles.button}>
             <BiArrowBack /> 돌아가기
           </div>
         </Link>
-      </AboutProject>
-    </MainBox>
+      </div>
+    </div>
   );
 }

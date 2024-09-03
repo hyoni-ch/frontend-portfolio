@@ -1,5 +1,4 @@
 import React from "react";
-import { MainBox, UpBtn } from "../style/MainCss";
 import About from "../About";
 import Skills from "../Skills";
 import Project from "../Project";
@@ -11,16 +10,16 @@ export default function Main() {
   return (
     <>
       <Intro />
-      <MainBox>
+      <div className="m-auto max-w-4xl w-11/12 lg:w-full">
         <About />
         <Skills />
         <Project />
         <LinkRoll to="introBox" spy={true} smooth={true}>
-          <UpBtn>
+          <div className="fixed bottom-5 right-5 rounded-full bg-white border border-gray-500 p-2 cursor-pointer hover:shadow-lg">
             <BsArrowUp size="30" color="#777777" />
-          </UpBtn>
+          </div>
         </LinkRoll>
-      </MainBox>
+      </div>
     </>
   );
 }

@@ -1,7 +1,4 @@
 import React from "react";
-import { Spacer } from "../style/CommonCss";
-import { MainBox } from "../style/MainCss";
-import { AboutProject } from "../style/ProjectCss";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import {
@@ -21,6 +18,7 @@ import {
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from "../style/AboutProjects.module.css";
 
 export default function MobileWedding() {
   const settings = {
@@ -49,9 +47,9 @@ export default function MobileWedding() {
   ];
 
   return (
-    <MainBox>
-      <Spacer />
-      <AboutProject>
+    <div className={styles.box}>
+      <div className="h-28"></div>
+      <div>
         <Slider {...settings}>
           {img.map((imgs, idx) => {
             return (
@@ -61,7 +59,7 @@ export default function MobileWedding() {
             );
           })}
         </Slider>
-        <div className="more">
+        <div className={styles.more}>
           <div>
             <h2>모바일 청첩장</h2>
             <ul>
@@ -72,7 +70,7 @@ export default function MobileWedding() {
             </ul>
           </div>
 
-          <div className="motivation">
+          <div>
             <h2>프로젝트 개발 동기</h2>
             <ul>
               <li>1. 가족이 결혼하게 되어 직접 만들어보기 위해서</li>
@@ -80,7 +78,7 @@ export default function MobileWedding() {
             </ul>
           </div>
 
-          <div className="func">
+          <div>
             <h2>프로젝트 기능</h2>
             <ul>
               <li>결혼식까지 며칠 남았는지 계산해주는 기능</li>
@@ -97,9 +95,9 @@ export default function MobileWedding() {
             </ul>
           </div>
 
-          <div className="stack">
+          <div>
             <h2>기술 스택</h2>
-            <ul>
+            <ul className="flex gap-10">
               <li>React</li>
               <li>Express</li>
               <li>NodeJS</li>
@@ -109,11 +107,11 @@ export default function MobileWedding() {
         </div>
 
         <Link to="/">
-          <div className="backBtn">
+          <div className={styles.button}>
             <BiArrowBack /> 돌아가기
           </div>
         </Link>
-      </AboutProject>
-    </MainBox>
+      </div>
+    </div>
   );
 }

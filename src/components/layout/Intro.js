@@ -1,21 +1,19 @@
 import React from "react";
-import { IntroBox } from "../style/IntroCss";
-import { IntroSpacer } from "../style/CommonCss";
+import styles from "../style/IntroBox.module.css";
 
 export default function Intro() {
   return (
     <>
-      <IntroSpacer id="introBox" />
-      <IntroBox>
-        <div className="wave wave-1"></div>
-        <div className="wave wave-2"></div>
-        <div className="wave wave-3"></div>
-        <div className="title">
-          <div className="myName">HaHyeon's</div>
+      <section className={styles.introBox} id="introBox">
+        <div className={`${styles.wave} ${styles["wave-1"]}`}></div>
+        <div className={`${styles.wave} ${styles["wave-2"]}`}></div>
+        <div className={`${styles.wave} ${styles["wave-3"]}`}></div>
+        <div className={styles.title}>
+          <div className={styles.myName}>HaHyeon's</div>
           <div>Frontend</div>
           <div>portfolio</div>
         </div>
-      </IntroBox>
+      </section>
     </>
   );
 }

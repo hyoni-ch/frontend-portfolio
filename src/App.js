@@ -13,7 +13,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/project/together" element={<Together />} />

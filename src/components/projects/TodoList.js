@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { Spacer } from "../style/CommonCss";
-import { MainBox } from "../style/MainCss";
-import { AboutProject } from "../style/ProjectCss";
+import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { todolistImg, todolistImg1, todolistImg2 } from "../../assets/images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from "../style/AboutProjects.module.css";
 
 export default function TodoList() {
   const settings = {
@@ -23,9 +21,9 @@ export default function TodoList() {
   const img = [todolistImg, todolistImg1, todolistImg2];
 
   return (
-    <MainBox>
-      <Spacer />
-      <AboutProject>
+    <div className={styles.box}>
+      <div className="h-28"></div>
+      <div>
         <Slider {...settings}>
           {img.map((imgs, idx) => {
             return (
@@ -35,7 +33,7 @@ export default function TodoList() {
             );
           })}
         </Slider>
-        <div className="more">
+        <div className={styles.more}>
           <div>
             <h2>투두리스트</h2>
             <ul>
@@ -45,7 +43,7 @@ export default function TodoList() {
             </ul>
           </div>
 
-          <div className="motivation">
+          <div>
             <h2>프로젝트 개발 동기</h2>
             <ul>
               <li>1. 해야할 일을 메모하기 위해</li>
@@ -54,7 +52,7 @@ export default function TodoList() {
             </ul>
           </div>
 
-          <div className="func">
+          <div>
             <h2>프로젝트 기능</h2>
             <ul>
               <li>오늘 날짜를 나타내는 기능</li>
@@ -64,9 +62,9 @@ export default function TodoList() {
             </ul>
           </div>
 
-          <div className="stack">
+          <div>
             <h2>기술 스택</h2>
-            <ul>
+            <ul className="flex gap-10">
               <li>React</li>
               <li>Redux</li>
               <li>typescript</li>
@@ -75,11 +73,11 @@ export default function TodoList() {
         </div>
 
         <Link to="/">
-          <div className="backBtn">
+          <div className={styles.button}>
             <BiArrowBack /> 돌아가기
           </div>
         </Link>
-      </AboutProject>
-    </MainBox>
+      </div>
+    </div>
   );
 }
