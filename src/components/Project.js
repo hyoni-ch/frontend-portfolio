@@ -83,7 +83,7 @@ export default function Project() {
       <div id="projectBox" className="h-24" />
 
       <h2 className="flex items-center gap-1 text-3xl border-b border-gray-300 mb-5">
-        <h2>PROJECT</h2>
+        PROJECT
         <div className="text-sm animate-motion">
           이미지를 클릭하면 자세히 볼 수 있습니다.
         </div>
