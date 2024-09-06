@@ -9,7 +9,7 @@ export default function About() {
       <div id="aboutBox" className="h-24" />
       <h2 className="text-3xl border-b border-gray-300 mb-5">ABOUT</h2>
       <div className="flex justify-center items-center gap-10 flex-col md:flex-row">
-        <div className="text-lg border rounded-md text-center p-10 w-2/4">
+        <div className="text-lg border rounded-md text-center p-10 w-full md:w-2/4">
           프론트엔드 개발자 <span style={{ fontWeight: 700 }}>조하현</span>
           입니다. <br /> <br />
           의사소통에 적극적이며 매사 열정적인 모습을 보여주려 노력합니다. 또한

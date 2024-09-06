@@ -8,7 +8,7 @@ export default function Skills() {
     },
     {
       category: "Framework / Library",
-      skills: ["React", "Redux", "NodeJS", "Express"],
+      skills: ["React", "Redux", "Node.js", "Express", "Next.js", "express"],
     },
     {
       category: "MarkUp",
@@ -33,8 +33,10 @@ export default function Skills() {
       <div className="flex flex-col gap-5">
         {skillsData.map((skillCategory, index) => (
           <div className="flex items-center" key={index}>
-            <div className="w-1/3 text-lg">{skillCategory.category}</div>
-            <div className="flex gap-5">
+            <div className="min-w-40 text-lg hidden md:min-w-52 sm:block">
+              {skillCategory.category}
+            </div>
+            <div className="flex flex-wrap gap-5 text-sm md:text-base ">
               {skillCategory.skills.map((skill, idx) => (
                 <div
                   className="text-purple-800 px-5 py-1 bg-gray-200 rounded-lg"
